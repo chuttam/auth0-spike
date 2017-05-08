@@ -55,8 +55,8 @@ var Home = React.createClass({
     return (
       <div className="container">
       <div className="col-xs-12 jumbotron text-center">
-        <h1>Meep</h1>
-        <p>Change a Thing!</p>
+        <h1>A Title</h1>
+        <p>Log in to see a set of Things!</p>
         <a onClick={this.showLock} className="btn btn-primary btn-lg btn-login btn-block">Sign In</a>
       </div>
     </div>);
@@ -88,8 +88,8 @@ var LoggedIn = React.createClass({
       return (
         <div className="col-lg-12">
           <span className="pull-right">{this.state.profile.nickname} <a onClick={this.logout}>Log out</a></span>
-          <h2>Meep Meep</h2>
-          <p>Change a Thing below</p>
+          <h2>All the Things!</h2>
+          <p>Here's a list of Things below</p>
           <div className="row">
             {this.state.things.map(function(thing, i){
               return <Thing key={i} thing={thing} />
